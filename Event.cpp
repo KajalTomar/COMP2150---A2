@@ -18,16 +18,21 @@ Event::Event(int theTime, Process *theProcess, Simulation *theSim)
 
 	 // I made this for compareTo
 int Event::getEventTime() {
-
+	return eventTime;
 }
 
+// just for testing pQueue delete after bc Event is an abstract class
+void handleEvent(){}
 int Event::compareTo(ListItem *other){
-    int result = 0; // -1 means we are smaller, 1 means we are bigger
+    int result = -2; // -1 means we are smaller, 1 means we are bigger, 0 means the same
     Event * comparingTo = dynamic_cast<Event *>(other); // take out the first burst. This will be the current burst
 
     // safe down casting
     if (comparingTo != nullptr){
-        if (eventTime < comparingTo->getEventTime()){
+		if(eventTime == comparingTo->getEventTime()){
+			result = 0;
+		}
+		else if (eventTime < comparingTo->getEventTime()){
             result = -1;
         } else {
             result = 1;
