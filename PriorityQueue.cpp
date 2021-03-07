@@ -69,13 +69,27 @@ void PriorityQueue::enqueue(ListItem *item){
 
 void PriorityQueue::addInTheMiddle(ListItem *item) {
     bool foundSpot = false;
-    Node * current;
-    Node * beforeCurrent;
+    Node * current = front;
+    Node * beforeCurrent = nullptr;
 
+    while (current && !foundSpot) {
+            beforeCurrent = current;
+            current = current->getNext();
+
+            if((current->getItem())->compareTo(item) >= 0){
+                // current is of a lower priority or the same
+                // later if 1 then current is a lower priority
+                // 0 = same priority
+                // right now this means we would add this new item
+                // before the old item (change later to account for timeout
+                // and arrival event)
+                foundSpot = true;
+            }
+    }
+
+    beforeCurrent->setNext(new Node(item, current));
 
 }
-
-
 
 ListItem *PriorityQueue::dequeue(){
     return ParentQueue::dequeue();
