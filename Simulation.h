@@ -1,13 +1,15 @@
 #pragma once
-
 #include <fstream>
 using namespace std;
 
+class Queue;
 
 class Simulation {
 private:
-	// you will need to add fields
-        // including: Queues for CPU and IO, and priority queues for Events 	
+    Queue * allProcesses;
+    int QUANTUM_TIME;
+    // you will need to add fields
+	// including: Queues for CPU and IO, and priority queues for Events
 public:
 	Simulation();
 
