@@ -11,6 +11,7 @@ class ListItem;
 
 class PriorityQueue : public ParentQueue {
 private:
+    void addInTheMiddle(ListItem *item);
 public:
     PriorityQueue();
     int getSize();
