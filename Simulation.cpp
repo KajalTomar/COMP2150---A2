@@ -31,17 +31,18 @@ void Simulation::runSimulation(char *file){
         inFile >> QUANTUM_TIME;
         inFile.ignore();
         while(getline(inFile, line)){
-            newProcess = new Process(line, allProcesses->getSize());
-            allProcesses->enqueue(newProcess);
+    // 		cout << line << endl;
+	//		cout << "Size = " << (allProcesses -> getSize()) << endl;
+			newProcess = new Process(line, allProcesses->getSize());
+    		allProcesses->enqueue(newProcess);
         }
-
         cout << QUANTUM_TIME << endl;
         inFile.close();
         assert(!inFile.is_open());
-
     } else {
-        cout << "error" << endl;
+        cout << "An error occured while opening the files" << endl;
     }
+	
 }
 
 void Simulation::summary(){}

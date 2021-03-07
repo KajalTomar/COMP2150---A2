@@ -13,11 +13,11 @@
 Queue::Queue() : ParentQueue() {}
 
 int Queue::getSize(){
-    ParentQueue::getSize();
+    return ParentQueue::getSize();
 }
 
 bool Queue::isEmpty(){
-    ParentQueue::isEmpty();
+    return ParentQueue::isEmpty();
 }
 
 void Queue::enqueue(ListItem *item){
@@ -33,11 +33,11 @@ void Queue::enqueue(ListItem *item){
 }// enqueue
 
 ListItem *Queue::dequeue(){
-    ParentQueue::dequeue();
+	return ParentQueue::dequeue();
 }// dequeue
 
 
 ListItem *Queue::getFront(){
-    ParentQueue::getFront();
+    return ParentQueue::getFront();
 }// getFront
 
