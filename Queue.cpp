@@ -1,14 +1,23 @@
+//--------------------------------------------
+// CLASS: Queue.cpp
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: implementation of a queue
+//--------------------------------------------
 #include "Queue.h"
 #include "ListItem.h"
 #include "Node.h"
 
 /**** Queue implementation */
-Queue::Queue() : front(nullptr), back(nullptr), size(0) {}
-int Queue::getSize(){ 
-	return size; 
+Queue::Queue() : ParentQueue() {}
+
+int Queue::getSize(){
+    ParentQueue::getSize();
 }
-bool Queue::isEmpty(){ 
-	return size == 0; 
+
+bool Queue::isEmpty(){
+    ParentQueue::isEmpty();
 }
 
 void Queue::enqueue(ListItem *item){
@@ -24,28 +33,11 @@ void Queue::enqueue(ListItem *item){
 }// enqueue
 
 ListItem *Queue::dequeue(){
-	ListItem *theItem = nullptr;
-	Node *theNode = front;
-	if(front != nullptr){
-		theItem = front->getItem();
-		// special case: removing last item
-		if(front == back){
-			front = back = nullptr;
-		} else {
-			front = front->getNext();
-		}
-		size--;
-		delete(theNode);
-	}
-	return theItem;
+    ParentQueue::dequeue();
 }// dequeue
 
 
 ListItem *Queue::getFront(){
-	ListItem *theItem = nullptr;
-	if(front != nullptr){
-		theItem = front->getItem();
-	}
-	return theItem;
+    ParentQueue::getFront();
 }// getFront
 

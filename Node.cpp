@@ -1,3 +1,12 @@
+//--------------------------------------------
+// CLASS: Node.cpp
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: The node class for our implementation
+// of a queue (linked list). Holds ListItems.
+//
+//--------------------------------------------
 #include "Node.h"
 #include "ListItem.h"
 

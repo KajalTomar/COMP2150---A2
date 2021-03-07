@@ -1,3 +1,12 @@
+//--------------------------------------------
+// CLASS: Process.cpp
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: Process class holds all the
+// information related to a process.
+//
+//--------------------------------------------
 #include "Process.h"
 #include <sstream>
 #include "Burst.h"

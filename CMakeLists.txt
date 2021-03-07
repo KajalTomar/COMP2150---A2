@@ -20,4 +20,8 @@ add_executable(COMP2150___A2
         Simulation.h
         Simulation.cpp
         Burst.cpp
-        Burst.h)
+        Burst.h
+        ParentQueue.cpp
+        ParentQueue.h
+        PriorityQueue.cpp
+        PriorityQueue.h)

@@ -5,7 +5,15 @@
 class Queue;
 
 using namespace std;
-
+//--------------------------------------------
+// CLASS: Process.h
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: class definitions for the Process.cpp
+// class.
+//
+//--------------------------------------------
 class Process: public ListItem {
 
 private:

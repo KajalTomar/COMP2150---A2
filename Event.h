@@ -1,6 +1,15 @@
 #pragma once
 #include "ListItem.h"
 class Process;
+//--------------------------------------------
+// CLASS: Event.h
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: class definitions for the event.cpp
+// class.
+//
+//--------------------------------------------
 class Simulation;
 
 class Event: public ListItem {

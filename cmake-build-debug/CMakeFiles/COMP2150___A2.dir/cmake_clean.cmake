@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP2150___A2.dir/Event.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/ListItem.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Node.cpp.obj"
+  "CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj"
+  "CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Process.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj"

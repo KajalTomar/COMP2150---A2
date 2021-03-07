@@ -1,3 +1,12 @@
+//--------------------------------------------
+// CLASS: Simulation.h
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: class definitions for the Simulation.cpp
+// class.
+//
+//--------------------------------------------
 #pragma once
 #include <fstream>
 using namespace std;

@@ -6,6 +6,16 @@
 #include <iostream>
 using namespace std;
 
+//--------------------------------------------
+// CLASS: Simulation.cpp
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: starts a simulation of the
+// operating system by reading the file and
+// managing the interactions between
+// events and Processes.
+//--------------------------------------------
 Simulation::Simulation(){}
 
 void Simulation::runSimulation(char *file){

@@ -18,18 +18,32 @@ CMakeFiles/COMP2150___A2.dir/Node.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Node.cpp.obj: ../Node.cpp
 CMakeFiles/COMP2150___A2.dir/Node.cpp.obj: ../Node.h
 
+CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../Node.h
+CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.cpp
+CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.h
+
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../Node.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ParentQueue.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../PriorityQueue.cpp
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../PriorityQueue.h
+
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Burst.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../ParentQueue.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Process.cpp
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Process.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Queue.h
 
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Node.h
+CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ParentQueue.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Queue.cpp
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Queue.h
 
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ParentQueue.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Process.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Queue.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Simulation.cpp

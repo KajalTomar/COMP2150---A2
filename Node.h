@@ -1,4 +1,12 @@
- 
+//--------------------------------------------
+// CLASS: Node.h
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: class definitions for the Node.cpp
+// class.
+//
+//--------------------------------------------
 class ListItem;
 
 class Node {

@@ -1,13 +1,19 @@
+//--------------------------------------------
+// CLASS: Queue.h
+//
+// Author: Kajal Tomar, 7793306
+//
+// REMARKS: class definitions for the Queue.cpp
+// class.
+//
+//--------------------------------------------
 #pragma once
-
+#include "ParentQueue.h"
 class Node;
 class ListItem;
 
-class Queue {
+class Queue : public ParentQueue {
 private:
-	Node *front;
-	Node *back;
-	int size;
 public:
 	Queue();
 	int getSize();

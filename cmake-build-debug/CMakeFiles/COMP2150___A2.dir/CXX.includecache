@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Node.h
+
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h
+
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.cpp
+PriorityQueue.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.h
+ParentQueue.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h
 ListItem.h
 C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+Node.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Node.h
 
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
-
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.cpp
-Process.h
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
-sstream
--
-Burst.h
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.h
-Queue.h
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.h
-iostream
--
-
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
-ListItem.h
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
-string
--
-
-C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.h
+ParentQueue.h
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h
 
