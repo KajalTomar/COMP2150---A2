@@ -25,6 +25,9 @@ public:
 	// pure virtual method - to handle the current event when it is removed from the queue.
 	virtual void handleEvent() = 0;
 
+	// I made this for compareTo
+	int getEventTime();
+
 	// compareTo - used to order Events. 
 	int compareTo(ListItem *other);
 };// class Event

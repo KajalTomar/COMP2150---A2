@@ -304,6 +304,33 @@ ParentQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.s
 .PHONY : ParentQueue.cpp.s
 
+PriorityQueue.obj: PriorityQueue.cpp.obj
+
+.PHONY : PriorityQueue.obj
+
+# target to build an object file
+PriorityQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj
+.PHONY : PriorityQueue.cpp.obj
+
+PriorityQueue.i: PriorityQueue.cpp.i
+
+.PHONY : PriorityQueue.i
+
+# target to preprocess a source file
+PriorityQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.i
+.PHONY : PriorityQueue.cpp.i
+
+PriorityQueue.s: PriorityQueue.cpp.s
+
+.PHONY : PriorityQueue.s
+
+# target to generate assembly for a file
+PriorityQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.s
+.PHONY : PriorityQueue.cpp.s
+
 Process.obj: Process.cpp.obj
 
 .PHONY : Process.obj
@@ -412,6 +439,9 @@ help:
 	@echo ... ParentQueue.obj
 	@echo ... ParentQueue.i
 	@echo ... ParentQueue.s
+	@echo ... PriorityQueue.obj
+	@echo ... PriorityQueue.i
+	@echo ... PriorityQueue.s
 	@echo ... Process.obj
 	@echo ... Process.i
 	@echo ... Process.s

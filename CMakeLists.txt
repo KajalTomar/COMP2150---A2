@@ -24,4 +24,7 @@ add_executable(COMP2150___A2
         Burst.h
         ParentQueue.cpp
         ParentQueue.h
-        )
+        PriorityQueue.cpp
+        ParentQueue.h
+        Catch.hpp
+        Catch2.h)

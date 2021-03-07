@@ -16,6 +16,7 @@ public:
     int getSize();
     bool isEmpty();
     void enqueue(ListItem *item);
+    //void setBack(Node * newBack);
     ListItem *getFront();
     ListItem *dequeue();
 }; // class PriorityQueue

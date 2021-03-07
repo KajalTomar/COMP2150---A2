@@ -23,6 +23,12 @@ CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../Node.h
 CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.cpp
 CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.h
 
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../Node.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ParentQueue.h
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../PriorityQueue.cpp
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../PriorityQueue.h
+
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Burst.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../ParentQueue.h

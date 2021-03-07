@@ -15,7 +15,6 @@ class Burst: public ListItem {
 
 private:
     int burstTime;
-
 public:
     Burst();
     Burst(int burstTime);

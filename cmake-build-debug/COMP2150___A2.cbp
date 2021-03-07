@@ -91,6 +91,9 @@
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Catch2.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.cpp">
 			<Option target="COMP2150___A2"/>
 		</Unit>
@@ -115,6 +118,12 @@
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.cpp">
 			<Option target="COMP2150___A2"/>
 		</Unit>
@@ -131,6 +140,9 @@
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/catch.hpp">
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CMakeLists.txt">
