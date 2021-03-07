@@ -39,7 +39,6 @@ Process::Process(string entireProcess, int makeThisTheID) {
         currentBurst = tempBurst->getBurst();
     }
 
-
 }
 
 void Process::print(){
