@@ -1,0 +1,3 @@
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
