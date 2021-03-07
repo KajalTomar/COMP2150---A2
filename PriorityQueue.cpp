@@ -32,7 +32,7 @@ void PriorityQueue::enqueue(ListItem *item){
         front = new Node(item, nullptr);
         back = front;
     }
-    else if (item->compareTo(front->getItem()) == 1) {
+    else if (item->compareTo(front->getItem()) == -1) {
         // item has a higher priority than the first item on the list
         // no need to look through the whole list, just add this item to the front
 
