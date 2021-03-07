@@ -26,5 +26,4 @@ add_executable(COMP2150___A2
         ParentQueue.h
         PriorityQueue.cpp
         ParentQueue.h
-        Catch.hpp
-        Catch2.h)
+       )
