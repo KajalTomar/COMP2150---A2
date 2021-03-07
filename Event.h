@@ -26,8 +26,12 @@ public:
 	// virtual void handleEvent() = 0;
 	void handleEvent();
 
+	// DELETE ME (I THINK)
+	void print();
+
 	// I made this for compareTo
 	int getEventTime();
+
 
 	// compareTo - used to order Events. 
 	int compareTo(ListItem *other);

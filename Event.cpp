@@ -11,6 +11,8 @@
 //
 //--------------------------------------------
 #include "Event.h"
+#include <iostream>
+using namespace std;
 
 /**** Event implementation */
 Event::Event(int theTime, Process *theProcess, Simulation *theSim) 
@@ -19,6 +21,11 @@ Event::Event(int theTime, Process *theProcess, Simulation *theSim)
 	 // I made this for compareTo
 int Event::getEventTime() {
 	return eventTime;
+}
+
+void Event::print(){
+    cout << eventTime;
+    process->print();
 }
 
 // just for testing pQueue delete after bc Event is an abstract class

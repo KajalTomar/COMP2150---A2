@@ -5,7 +5,8 @@
 #include "Simulation.h"
 #include "Process.h"
 #include "Event.h"
-
+#include <iostream>
+using namespace std;
 TEST_CASE("Testing enqueue edge cases"){
 
 	// CHANGE THESE TEST BECAUSE EVENT IS A VIRTUAL CLASS
@@ -62,6 +63,7 @@ TEST_CASE("Testing enqueue general cases") {
     SECTION("Adding a events in an already correct order of priorities") {
         Event * dequeued;
 
+        cout << endl <<  endl << "TEST 4" << endl;
         for (int i = 0; i < 10; i++) {
             testQ->enqueue(new Event(i, new Process(("4 3 54 23 54"), i), sim));
         }
@@ -69,23 +71,26 @@ TEST_CASE("Testing enqueue general cases") {
         while(testQ->getSize()>=2){
             dequeued =  dynamic_cast<Event *>(testQ->dequeue());
 
+            dequeued->print();
+
             if(dequeued != nullptr && dequeued->compareTo(testQ->getFront())){
                 REQUIRE(dequeued->compareTo(testQ->getFront()) <= 0);
                 // dequeued event had a higher priority
             }
         }
-
     } // SECTION 4
 
     SECTION("Adding a events in opposite of correct order of priorities. So each event should is of a higher priority that everything else on the list") {
         Event * dequeued;
-
+        cout << endl <<  endl << "TEST 5" << endl;
         for (int i = 10; i > 0; i--) {
             testQ->enqueue(new Event(i, new Process(("4 3 54 23 54"), i), sim));
         }
 
         while(testQ->getSize()>=2){
             dequeued =  dynamic_cast<Event *>(testQ->dequeue());
+
+            dequeued->print();
 
             if(dequeued != nullptr && dequeued->compareTo(testQ->getFront())){
                 REQUIRE(dequeued->compareTo(testQ->getFront()) <= 0);
@@ -98,6 +103,7 @@ TEST_CASE("Testing enqueue general cases") {
     SECTION("Adding a events in mixed up priority") {
         Event * dequeued;
 
+        cout << endl <<  endl << "TEST 4" << endl;
 
         testQ->enqueue(new Event(13, new Process(("4 3 -54 23 -54"), 0), sim));
         testQ->enqueue(new Event(54, new Process(("12 31 -4 3 -14"), 1), sim));
@@ -109,11 +115,15 @@ TEST_CASE("Testing enqueue general cases") {
         while(testQ->getSize()>=2){
             dequeued =  dynamic_cast<Event *>(testQ->dequeue());
 
+            dequeued->print();
+
             if(dequeued != nullptr && dequeued->compareTo(testQ->getFront())){
                 REQUIRE(dequeued->compareTo(testQ->getFront()) <= 0);
                 // dequeued event had a higher priority
             }
         }
+
+
 
     } // SECTION 5
 
