@@ -34,7 +34,7 @@ void StartCPU::handleEvent() {
 }
 
 int StartCPU::compareTo(ListItem *other) {
-    return -1;
+    return Event::compareTo(other);
 }
 
 void StartCPU::print() {

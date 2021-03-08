@@ -20,7 +20,7 @@ void Timeout::handleEvent() {
 }
 
 int Timeout::compareTo(ListItem *other) {
-    return -1;
+    return Event::compareTo(other);
 }
 
 void Timeout::print() {

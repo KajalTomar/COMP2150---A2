@@ -20,7 +20,7 @@ void CompleteCPU::handleEvent() {
 }
 
 int CompleteCPU::compareTo(ListItem *other) {
-    return -1;
+    return Event::compareTo(other);
 }
 
 void CompleteCPU::print() {

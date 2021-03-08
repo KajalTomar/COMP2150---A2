@@ -18,7 +18,19 @@ Burst::Burst(int newBurstTime) : burstTime(newBurstTime){}
 int Burst::getBurst() { return burstTime; }
 
 int Burst::compareTo(ListItem *other){
-    return -1; // you should implement this method.
+    int result = -2;
+    Burst * comparingTo = dynamic_cast<Burst *>(other);
+
+    if(comparingTo != nullptr){
+        if(burstTime == comparingTo->getBurst()){
+            result = 0; // same bursts
+        }
+        else if (burstTime < comparingTo->getBurst()){
+            result = -1; // this burst requires less time
+        } else {
+            result = 1; // this burst requires more time
+        }
+    }
 }
 
 void Burst::print(){

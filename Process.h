@@ -28,6 +28,7 @@ public:
     Process(string entireProcess, int id);
     void print();
     int getArrivalTime();
+    int getID();
     void updateWaitTime(int time);
     void updateCurrentBurst(int time);
     void nextBurst();

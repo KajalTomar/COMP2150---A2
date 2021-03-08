@@ -72,7 +72,20 @@ bool Process::noMoreBursts() { return (burstRequests->isEmpty());}
 void Process::print(){
     cout << "ID: " << id << " / arrival time: " << arrivalTime << " / current burst: " << currentBurst << " / # of remaining bursts: " << burstRequests->getSize() << endl;
 }
+int Process::getID(){ return id; }
 
 int Process::compareTo(ListItem *other){
-    return -1; // you should implement this method.
+    int result = -2; // -1 means we are higher priority (smaller, earlier in time), 1 means we are lower priority (bigger, later in time), 0 means the same priority
+    Process * comparingTo = dynamic_cast<Process *>(other); // take out the first burst. This will be the current burst
+
+    // safe down casting
+    if (comparingTo != nullptr){
+        if (id < comparingTo->getID()){
+            result = -1; // this is higher priority
+        } else {
+            result = 1; // lthis is lower priority
+        }
+    }
+
+    return  result;
 }

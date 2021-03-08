@@ -40,7 +40,7 @@ void ProcessArrival::handleEvent() {
 }
 
 int ProcessArrival::compareTo(ListItem *other) {
-    return -1;
+    return Event::compareTo(other);
 }
 
 void ProcessArrival::print() {
