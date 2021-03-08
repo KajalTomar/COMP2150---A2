@@ -8,10 +8,18 @@ CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CompleteCPU.cpp
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CompleteCPU.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
 CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.h
@@ -46,6 +54,7 @@ CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.h
@@ -69,11 +78,18 @@ CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h
 CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CompleteCPU.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.h
- C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
- C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.h
- C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.cpp
  C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Timeout.h
+CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Timeout.cpp
+ C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Timeout.h

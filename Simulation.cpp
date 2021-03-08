@@ -22,12 +22,12 @@ Simulation::Simulation(){
     CPUprocesses = new Queue;
     IOprocesses = new Queue;
     eventList = new PriorityQueue;
-    nextProcessID = 0;
+    nextProcessID = 1;
 }
 
 void Simulation::runSimulation(char *file){
     dataReader = new FileReader(file);  // create the file reader
-    nextProcessID = 0;
+    nextProcessID = 1;
     QUANTUM_TIME = dataReader->getQuantumNumber(); // set the quantum time
     //cout << QUANTUM_TIME << endl;
     Process * firstProcess = new Process((dataReader->getLine()),nextProcessID);
@@ -37,21 +37,16 @@ void Simulation::runSimulation(char *file){
     currentEvent = new ProcessArrival(firstProcess, this, dataReader);
     eventList->enqueue(currentEvent);
 
-    cout << "RIGHT BEFORE ENTERING WHILE LOOP" << endl;
-    eventList->printList();
-
     while(!eventList->isEmpty()){
-        currentEvent = dynamic_cast<ProcessArrival *>(eventList->dequeue());
-
-        // the top eventList event is Process arrival
-        if(currentEvent != nullptr){
-            currentEvent->handleEvent();
+        currentEvent = dynamic_cast<Event*>(eventList->dequeue());
+        if(currentEvent!= nullptr) {
+            currentEvent->handleEvent(); // dynamic
         }
-
         cout << "AFTER LOOP" << endl;
         cout << "----------------------------------------" << endl;
         cout << "EVENTS: " << endl;
         eventList->printList();
+        eventList = dynamic_cast<PriorityQueue*>(eventList);
 
         cout << endl << "CPU Processes: " << endl;
         CPUprocesses->printList();
@@ -60,6 +55,7 @@ void Simulation::runSimulation(char *file){
         IOprocesses->printList();
     }
 }
+
 
 int  Simulation::getNextIdNumber(){
     nextProcessID++;
@@ -78,11 +74,18 @@ void Simulation::addToIOLine(Process *toAdd) {
     IOprocesses->enqueue(toAdd);
 }
 
+Process * Simulation::dequeueCPULine(){
+    Process * toReturn = dynamic_cast<Process *>(CPUprocesses->dequeue());
+    return toReturn;
+}
+
 int Simulation::getQUANTUM_TIME() {
     return QUANTUM_TIME;
 }
 
-bool Simulation::eventListEmpty(){return eventList->isEmpty(); }
+//bool Simulation::eventListEmpty(){return eventList->isEmpty(); }
+bool Simulation::CPUInUse(){return CPUprocesses->isEmpty(); }
+bool Simulation::IOInUse(){return IOprocesses->isEmpty(); }
 
 void Simulation::summary(){
 }

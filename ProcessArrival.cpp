@@ -22,12 +22,14 @@ ProcessArrival::ProcessArrival(Process * newProcess, Simulation * sim ,FileReade
 
 void ProcessArrival::handleEvent() {
     Process * newProcess;
-    // if eventlist empty then create a startcpu event and add it to the event priority queue
-    if(sim->eventListEmpty()){
+
+    // if CPU is not in use, then create a startcpu event and add it to the event priority queue
+    if(!sim->CPUInUse()){ //
         sim->addEvent(new StartCPU(process->getArrivalTime(),process,sim));
     }
-
-    // record time spend waiting = 0
+    // add it to the CPU Queue
+    sim->addToCPULine(process);
+    //time spent waiting = 0
 
     if(!dataReader->isEmpty()){
         // create new arrival event

@@ -37,10 +37,13 @@ public:
     void addEvent(Event * toAdd);
     void addToCPULine(Process * toAdd);
     void addToIOLine(Process * toAdd);
-
-    bool eventListEmpty();
+    Process * dequeueCPULine();
+  //  bool eventListEmpty();
+    bool CPUInUse();
+    bool IOInUse();
     int getNextIdNumber();
     int getQUANTUM_TIME();
+    void processEvent();
 	// summary -- print a summary of all the processes, as shown in the
 	// assignment.  Called by main.
 	void summary();

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/COMP2150___A2.dir/A2main.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj"
+  "CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Event.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/ListItem.cpp.obj"
@@ -12,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj"
+  "CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj"
   "COMP2150___A2.exe"
   "COMP2150___A2.exe.manifest"
   "COMP2150___A2.pdb"

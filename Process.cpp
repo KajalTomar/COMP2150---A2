@@ -58,7 +58,7 @@ void Process::updateCurrentBurst(int time) {
 }
 
 void Process::nextBurst() {
-    Burst *nextBurst = dynamic_cast<Burst *>(burstRequests->dequeue());
+    Burst * nextBurst = dynamic_cast<Burst *>(burstRequests->dequeue());
 
     if(nextBurst != nullptr){
         currentBurst = nextBurst->getBurst();

@@ -196,6 +196,33 @@ Burst.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Burst.cpp.s
 .PHONY : Burst.cpp.s
 
+CompleteCPU.obj: CompleteCPU.cpp.obj
+
+.PHONY : CompleteCPU.obj
+
+# target to build an object file
+CompleteCPU.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj
+.PHONY : CompleteCPU.cpp.obj
+
+CompleteCPU.i: CompleteCPU.cpp.i
+
+.PHONY : CompleteCPU.i
+
+# target to preprocess a source file
+CompleteCPU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.i
+.PHONY : CompleteCPU.cpp.i
+
+CompleteCPU.s: CompleteCPU.cpp.s
+
+.PHONY : CompleteCPU.s
+
+# target to generate assembly for a file
+CompleteCPU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.s
+.PHONY : CompleteCPU.cpp.s
+
 Event.obj: Event.cpp.obj
 
 .PHONY : Event.obj
@@ -493,6 +520,33 @@ StartCPU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.s
 .PHONY : StartCPU.cpp.s
 
+Timeout.obj: Timeout.cpp.obj
+
+.PHONY : Timeout.obj
+
+# target to build an object file
+Timeout.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj
+.PHONY : Timeout.cpp.obj
+
+Timeout.i: Timeout.cpp.i
+
+.PHONY : Timeout.i
+
+# target to preprocess a source file
+Timeout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Timeout.cpp.i
+.PHONY : Timeout.cpp.i
+
+Timeout.s: Timeout.cpp.s
+
+.PHONY : Timeout.s
+
+# target to generate assembly for a file
+Timeout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Timeout.cpp.s
+.PHONY : Timeout.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -508,6 +562,9 @@ help:
 	@echo ... Burst.obj
 	@echo ... Burst.i
 	@echo ... Burst.s
+	@echo ... CompleteCPU.obj
+	@echo ... CompleteCPU.i
+	@echo ... CompleteCPU.s
 	@echo ... Event.obj
 	@echo ... Event.i
 	@echo ... Event.s
@@ -541,6 +598,9 @@ help:
 	@echo ... StartCPU.obj
 	@echo ... StartCPU.i
 	@echo ... StartCPU.s
+	@echo ... Timeout.obj
+	@echo ... Timeout.i
+	@echo ... Timeout.s
 .PHONY : help
 
 

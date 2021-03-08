@@ -91,6 +91,12 @@
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CompleteCPU.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CompleteCPU.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.cpp">
 			<Option target="COMP2150___A2"/>
 		</Unit>
@@ -155,6 +161,12 @@
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Timeout.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Timeout.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CMakeLists.txt">

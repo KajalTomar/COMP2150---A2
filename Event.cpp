@@ -25,7 +25,7 @@ int Event::getEventTime() {
 }
 
 void Event::print(){
-    cout << eventTime << " ";
+    cout << "Time: " << eventTime << " ";
     process -> print();
 }
 
