@@ -15,6 +15,7 @@ class Queue;
 class PriorityQueue;
 class Event;
 class FileReader;
+class Process;
 
 class Simulation {
 private:

@@ -1,9 +1,4 @@
-#include "Simulation.h"
-#include "Queue.h"
-#include "PriorityQueue.h"
-#include "FileReader.h"
-#include "ProcessArrival.h"
-#include "Process.h"
+
 //--------------------------------------------
 // CLASS: Simulation.cpp
 //
@@ -14,7 +9,12 @@
 // managing the interactions between
 // events and Processes.
 //--------------------------------------------
-
+#include "Simulation.h"
+#include "Queue.h"
+#include "PriorityQueue.h"
+#include "FileReader.h"
+#include "ProcessArrival.h"
+#include "Process.h"
 #include <iostream>
 using namespace std;
 
