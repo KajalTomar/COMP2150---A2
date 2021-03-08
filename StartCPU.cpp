@@ -11,6 +11,7 @@
 #include "Queue.h"
 #include "FileReader.h"
 #include "Simulation.h"
+#include "Process.h"
 #include <iostream>
 using namespace std;
 

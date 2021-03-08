@@ -12,6 +12,7 @@
 #include "FileReader.h"
 #include "Simulation.h"
 #include "StartCPU.h"
+#include "Process.h"
 #include <iostream>
 using namespace std;
 

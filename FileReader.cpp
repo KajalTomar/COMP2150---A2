@@ -7,7 +7,7 @@ using namespace std;
 FileReader::FileReader() { }
 
 FileReader::FileReader(char * fileName) {
-    inFile.open("initTest.txt");
+    inFile.open(fileName);
     assert(inFile);
     if (!inFile.is_open()) {
         cout << "An error occured while opening the files" << endl;
@@ -15,7 +15,7 @@ FileReader::FileReader(char * fileName) {
 }
 
 int FileReader::getQuantumNumber() {
-    int quantumNumber;
+    int quantumNumber = 0;
 
     if(inFile.is_open()) {
         inFile >> quantumNumber;
