@@ -46,7 +46,7 @@ public:
 	// summary -- print a summary of all the processes, as shown in the
 	// assignment.  Called by main.
 	void summarize();
-    void addToOutput(string line);
+//    void addToOutput(string line);
 	// you may need to add more methods
 
 };// class Simulation

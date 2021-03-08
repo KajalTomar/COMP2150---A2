@@ -77,9 +77,9 @@ bool Simulation::CPUInUse(){return !CPUprocesses->isEmpty(); }
 
 bool Simulation::IOInUse(){return !IOprocesses->isEmpty(); }
 
-void Simulation::addToOutput(string line) {
-    cout << line;
-}
+//void Simulation::addToOutput(string line) {
+//    cout << line;
+//}
 
 void Simulation::summarize(){
 
