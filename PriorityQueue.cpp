@@ -39,7 +39,7 @@ void PriorityQueue::enqueue(ListItem *item){
         temp = new Node(item, front);
         front = temp;
     }
-    else if(item->compareTo(back->getItem()) >= 0) {
+    else if(item->compareTo(back->getItem()) == 1) {
             // item has a lower priority than the last item on the list
             // no need to look through the whole list, just add this item to the back
 
@@ -72,7 +72,7 @@ void PriorityQueue::addInTheMiddle(ListItem *item) {
     Node * current = front;
     Node * beforeCurrent = nullptr;
 
-    while (current->getNext() && !foundSpot) {
+    while (current && !foundSpot) {
             beforeCurrent = current;
             current = current->getNext();
 
