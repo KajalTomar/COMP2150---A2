@@ -24,12 +24,15 @@ TEST_CASE("Testing enqueue edge cases"){
 		REQUIRE(testQ->getSize() == 1);
 	} // SECTION 1
 	
-	SECTION("Adding an item with lower priority (earlier in time) to a priority queue with exactly one item"){
+	SECTION("Adding an item with higher priority (earlier in time) to a priority queue with exactly one item"){
 		Process * earliestProcess = new Process("1 2 4 5 -6 12",1);
         StartCPU* earliestEvent = new StartCPU(2, earliestProcess, sim);
 		
-		testQ->enqueue(earliestEvent); 
-
+		testQ->enqueue(earliestEvent);
+		cout << "HERE" << endl;
+		cout << "New item: " << endl;
+        earliestEvent->print();
+        testQ->getFront()->print();
 		REQUIRE(earliestEvent->compareTo(testQ->getFront()) == 0);
 		REQUIRE(testQ->getSize() == 2);
 	
