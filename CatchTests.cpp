@@ -4,7 +4,7 @@
 #include "PriorityQueue.h"
 #include "Simulation.h"
 #include "ProcessArrival.h"
-#include "Event.h"
+#include "Process.h"
 #include <iostream>
 using namespace std;
 TEST_CASE("Testing enqueue edge cases"){
