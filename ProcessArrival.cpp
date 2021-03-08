@@ -23,9 +23,13 @@ ProcessArrival::ProcessArrival(Process * newProcess, Simulation * sim ,FileReade
 void ProcessArrival::handleEvent() {
     Process * newProcess;
 
+    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " arrives in the system";
     // if CPU is not in use, then create a startcpu event and add it to the event priority queue
-    if(!sim->CPUInUse()){ //
+    if(!sim->CPUInUse()){
+        cout << ": CPU is free (process begins execution)." << endl;
         sim->addEvent(new StartCPU(process->getArrivalTime(),process,sim));
+    } else {
+        cout << ": CPU is busy (process will be queued)." << endl;
     }
     // add it to the CPU Queue
     sim->addToCPULine(process);
@@ -43,7 +47,3 @@ int ProcessArrival::compareTo(ListItem *other) {
     return Event::compareTo(other);
 }
 
-void ProcessArrival::print() {
-    cout << "arrival event ";
-    Event::print();
-}

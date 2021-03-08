@@ -29,7 +29,7 @@ void Simulation::runSimulation(char *file){
     dataReader = new FileReader(file);  // create the file reader
     nextProcessID = 1;
     QUANTUM_TIME = dataReader->getQuantumNumber(); // set the quantum time
-    //cout << QUANTUM_TIME << endl;
+
     Process * firstProcess = new Process((dataReader->getLine()),nextProcessID);
    // cout << "First Process: ";
    // firstProcess->print();
@@ -42,20 +42,9 @@ void Simulation::runSimulation(char *file){
         if(currentEvent!= nullptr) {
             currentEvent->handleEvent(); // dynamic
         }
-        cout << "AFTER LOOP" << endl;
-        cout << "----------------------------------------" << endl;
-        cout << "EVENTS: " << endl;
-        eventList->printList();
-        eventList = dynamic_cast<PriorityQueue*>(eventList);
 
-        cout << endl << "CPU Processes: " << endl;
-        CPUprocesses->printList();
-
-        cout << endl << "IO Processes: " << endl;
-        IOprocesses->printList();
     }
 }
-
 
 int  Simulation::getNextIdNumber(){
     nextProcessID++;
@@ -84,9 +73,15 @@ int Simulation::getQUANTUM_TIME() {
 }
 
 //bool Simulation::eventListEmpty(){return eventList->isEmpty(); }
-bool Simulation::CPUInUse(){return CPUprocesses->isEmpty(); }
-bool Simulation::IOInUse(){return IOprocesses->isEmpty(); }
+bool Simulation::CPUInUse(){return !CPUprocesses->isEmpty(); }
 
-void Simulation::summary(){
+bool Simulation::IOInUse(){return !IOprocesses->isEmpty(); }
+
+void Simulation::addToOutput(string line) {
+    cout << line;
+}
+
+void Simulation::summarize(){
+
 }
 

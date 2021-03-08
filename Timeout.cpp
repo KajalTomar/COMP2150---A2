@@ -16,14 +16,9 @@ using namespace std;
 Timeout::Timeout(int time,Process * theProcess, Simulation * sim): Event(time,theProcess,sim){}
 
 void Timeout::handleEvent() {
-
+    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " times out (needs " << process->getCurrentBurst() << "units total)." << endl;
 }
 
 int Timeout::compareTo(ListItem *other) {
     return Event::compareTo(other);
-}
-
-void Timeout::print() {
-    cout << "Timeout event ";
-    Event::print();
 }

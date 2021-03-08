@@ -14,6 +14,6 @@ public:
     // compareTo - used to order Events.
     int compareTo(ListItem *other);
 
-    void print();
+//    void print();
 
 };// class Event

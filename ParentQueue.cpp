@@ -49,12 +49,3 @@ ListItem *ParentQueue::getFront(){
     }
     return theItem;
 }// getFront
-
-void ParentQueue::printList(){
-    Node * curr = front;
-
-    while(curr){
-        curr->getItem()->print();
-        curr = curr->getNext();
-    }
-}

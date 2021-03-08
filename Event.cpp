@@ -25,8 +25,7 @@ int Event::getEventTime() {
 }
 
 void Event::print(){
-    cout << "Time: " << eventTime << " ";
-    process -> print();
+    cout << "Time: \t" << eventTime << ": Process " << process->getID();
 }
 
 // just for testing pQueue delete after bc Event is an abstract class

@@ -22,11 +22,14 @@ StartCPU::StartCPU(int time,Process * theProcess, Simulation * sim): Event(time,
 void StartCPU::handleEvent() {
     const int QUANTUM_TIME = sim ->getQUANTUM_TIME();
     const int requestedBurst = process->getCurrentBurst();
+    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " begins CPU burst";
 
     if(requestedBurst > QUANTUM_TIME){
+        cout << " (will time out; needs "<<requestedBurst<<" units total)." << endl;
         process->updateCurrentBurst(QUANTUM_TIME);
         sim->addEvent(new Timeout((eventTime+QUANTUM_TIME),process,sim));
     } else {
+        cout << " (will complete all "<<requestedBurst<<" remaining units)." << endl;
         process->nextBurst(); // make current burst = next burst
         sim->addEvent(new CompleteCPU((eventTime+requestedBurst), process, sim));
     }
@@ -37,8 +40,5 @@ int StartCPU::compareTo(ListItem *other) {
     return Event::compareTo(other);
 }
 
-void StartCPU::print() {
-    cout << "startCPU event ";
-    Event::print();
-}
+
 

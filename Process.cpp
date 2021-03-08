@@ -69,9 +69,9 @@ int Process::getCurrentBurst() { return currentBurst;}
 
 bool Process::noMoreBursts() { return (burstRequests->isEmpty());}
 
-void Process::print(){
-    cout << "ID: " << id << " / arrival time: " << arrivalTime << " / current burst: " << currentBurst << " / # of remaining bursts: " << burstRequests->getSize() << endl;
-}
+//void Process::print(){
+//    cout << "Process\t" << id << " / arrival time: " << arrivalTime << " / current burst: " << currentBurst << " / # of remaining bursts: " << burstRequests->getSize() << endl;
+//}
 int Process::getID(){ return id; }
 
 int Process::compareTo(ListItem *other){

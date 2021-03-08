@@ -9,7 +9,6 @@
 //--------------------------------------------
 #pragma once
 #include <fstream>
-using namespace std;
 
 class Queue;
 class PriorityQueue;
@@ -46,8 +45,8 @@ public:
     void processEvent();
 	// summary -- print a summary of all the processes, as shown in the
 	// assignment.  Called by main.
-	void summary();
-
+	void summarize();
+    void addToOutput(string line);
 	// you may need to add more methods
 
 };// class Simulation

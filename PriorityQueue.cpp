@@ -100,6 +100,3 @@ ListItem *PriorityQueue::getFront(){
     return ParentQueue::getFront();
 }// getFront
 
-void PriorityQueue::printList() {
-    ParentQueue::printList();
-}

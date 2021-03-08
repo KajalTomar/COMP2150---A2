@@ -16,14 +16,14 @@ using namespace std;
 CompleteCPU::CompleteCPU(int time,Process * theProcess, Simulation * sim): Event(time,theProcess,sim){}
 
 void CompleteCPU::handleEvent() {
-
+    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " completes CPU burst." << endl;
 }
 
 int CompleteCPU::compareTo(ListItem *other) {
     return Event::compareTo(other);
 }
 
-void CompleteCPU::print() {
-    cout << "CompleteCPU event ";
-    Event::print();
-}
+//void CompleteCPU::print() {
+//    cout << "CompleteCPU event ";
+//    Event::print();
+//}

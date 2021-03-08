@@ -31,8 +31,9 @@ int Burst::compareTo(ListItem *other){
             result = 1; // this burst requires more time
         }
     }
+    return result;
 }
 
-void Burst::print(){
-    cout << "Burst Time: " << burstTime;
-}
+//void Burst::print(){
+//    cout << "Burst Time: " << burstTime;
+//}
