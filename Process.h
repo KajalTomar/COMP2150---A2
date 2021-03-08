@@ -1,10 +1,3 @@
-#pragma once
-#include "ListItem.h"
-#include <string>
-
-class Queue;
-
-using namespace std;
 //--------------------------------------------
 // CLASS: Process.h
 //
@@ -14,6 +7,12 @@ using namespace std;
 // class.
 //
 //--------------------------------------------
+#pragma once
+#include "ListItem.h"
+#include <string>
+
+class Queue;
+
 class Process: public ListItem {
 
 private:
@@ -25,7 +24,8 @@ private:
 public:
     Process();
     Process(string entireProcess, int id);
-    void print();
+    virtual void print();
+    virtual int getTime();
     int compareTo(ListItem *other);
 
 };

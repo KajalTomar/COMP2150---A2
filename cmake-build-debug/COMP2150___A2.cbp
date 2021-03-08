@@ -97,6 +97,12 @@
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.cpp">
 			<Option target="COMP2150___A2"/>
 		</Unit>
@@ -125,6 +131,12 @@
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.cpp">

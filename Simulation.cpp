@@ -1,11 +1,9 @@
 #include "Simulation.h"
-#include <assert.h>
-#include <string>
-#include "Process.h"
 #include "Queue.h"
-#include <iostream>
-using namespace std;
-
+#include "PriorityQueue.h"
+#include "FileReader.h"
+#include "ProcessArrival.h"
+#include "Process.h"
 //--------------------------------------------
 // CLASS: Simulation.cpp
 //
@@ -17,32 +15,23 @@ using namespace std;
 // events and Processes.
 //--------------------------------------------
 Simulation::Simulation(){}
+#include <iostream>
+using namespace std;
 
 void Simulation::runSimulation(char *file){
-    allProcesses = new Queue;
-    Process * newProcess;
-    string line;
-    ifstream inFile;
-    inFile.open("initTest.txt");
+    dataReader = new FileReader(file);
+    CPUprocesses = new Queue;
+    IOprocesses = new Queue;
+    eventList = new PriorityQueue;
 
-    assert(inFile);
+    QUANTUM_TIME = dataReader->getQuantumNumber();
+    cout << QUANTUM_TIME << endl;
+    Process * firstProcess = new Process((dataReader->getLine()),totalProcess);
+    cout << "First Process: ";
+    firstProcess->print();
 
-    if(inFile){
-        inFile >> QUANTUM_TIME;
-        inFile.ignore();
-        while(getline(inFile, line)){
-    // 		cout << line << endl;
-	//		cout << "Size = " << (allProcesses -> getSize()) << endl;
-			newProcess = new Process(line, allProcesses->getSize());
-    		allProcesses->enqueue(newProcess);
-        }
-        cout << QUANTUM_TIME << endl;
-        inFile.close();
-        assert(!inFile.is_open());
-    } else {
-        cout << "An error occured while opening the files" << endl;
-    }
-	
+    currentEvent = new ProcessArrival(firstProcess, this, dataReader);
+    totalProcess++;
 }
 
 void Simulation::summary(){}

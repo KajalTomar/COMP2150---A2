@@ -7,11 +7,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/A2main.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/A2main.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Burst.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Event.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Event.cpp.obj"
+  "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/FileReader.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ListItem.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/ListItem.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Node.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Node.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ParentQueue.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/PriorityQueue.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Process.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Process.cpp.obj"
+  "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj"
   )

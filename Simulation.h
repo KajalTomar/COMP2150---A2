@@ -12,11 +12,19 @@
 using namespace std;
 
 class Queue;
+class PriorityQueue;
+class Event;
+class FileReader;
 
 class Simulation {
 private:
-    Queue * allProcesses;
+    FileReader * dataReader;
+    Queue * CPUprocesses;
+    Queue * IOprocesses;
+    PriorityQueue * eventList;
+    Event * currentEvent;
     int QUANTUM_TIME;
+    int totalProcess = 0;
     // you will need to add fields
 	// including: Queues for CPU and IO, and priority queues for Events
 public:

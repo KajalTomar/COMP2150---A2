@@ -12,6 +12,11 @@ CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Event.cpp
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Event.h
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../ListItem.h
 
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../FileReader.cpp
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../FileReader.h
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../Process.h
+
 CMakeFiles/COMP2150___A2.dir/ListItem.cpp.obj: ../ListItem.cpp
 
 CMakeFiles/COMP2150___A2.dir/Node.cpp.obj: ../ListItem.h
@@ -36,15 +41,27 @@ CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Process.cpp
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Process.h
 CMakeFiles/COMP2150___A2.dir/Process.cpp.obj: ../Queue.h
 
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../FileReader.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ParentQueue.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.cpp
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Queue.h
+
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Node.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ParentQueue.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Queue.cpp
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Queue.h
 
+CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../FileReader.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ParentQueue.h
+CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../PriorityQueue.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ProcessArrival.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Queue.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Simulation.cpp
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Simulation.h

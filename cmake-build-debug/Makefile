@@ -223,6 +223,33 @@ Event.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Event.cpp.s
 .PHONY : Event.cpp.s
 
+FileReader.obj: FileReader.cpp.obj
+
+.PHONY : FileReader.obj
+
+# target to build an object file
+FileReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj
+.PHONY : FileReader.cpp.obj
+
+FileReader.i: FileReader.cpp.i
+
+.PHONY : FileReader.i
+
+# target to preprocess a source file
+FileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/FileReader.cpp.i
+.PHONY : FileReader.cpp.i
+
+FileReader.s: FileReader.cpp.s
+
+.PHONY : FileReader.s
+
+# target to generate assembly for a file
+FileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/FileReader.cpp.s
+.PHONY : FileReader.cpp.s
+
 ListItem.obj: ListItem.cpp.obj
 
 .PHONY : ListItem.obj
@@ -358,6 +385,33 @@ Process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Process.cpp.s
 .PHONY : Process.cpp.s
 
+ProcessArrival.obj: ProcessArrival.cpp.obj
+
+.PHONY : ProcessArrival.obj
+
+# target to build an object file
+ProcessArrival.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj
+.PHONY : ProcessArrival.cpp.obj
+
+ProcessArrival.i: ProcessArrival.cpp.i
+
+.PHONY : ProcessArrival.i
+
+# target to preprocess a source file
+ProcessArrival.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.i
+.PHONY : ProcessArrival.cpp.i
+
+ProcessArrival.s: ProcessArrival.cpp.s
+
+.PHONY : ProcessArrival.s
+
+# target to generate assembly for a file
+ProcessArrival.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.s
+.PHONY : ProcessArrival.cpp.s
+
 Queue.obj: Queue.cpp.obj
 
 .PHONY : Queue.obj
@@ -430,6 +484,9 @@ help:
 	@echo ... Event.obj
 	@echo ... Event.i
 	@echo ... Event.s
+	@echo ... FileReader.obj
+	@echo ... FileReader.i
+	@echo ... FileReader.s
 	@echo ... ListItem.obj
 	@echo ... ListItem.i
 	@echo ... ListItem.s
@@ -445,6 +502,9 @@ help:
 	@echo ... Process.obj
 	@echo ... Process.i
 	@echo ... Process.s
+	@echo ... ProcessArrival.obj
+	@echo ... ProcessArrival.i
+	@echo ... ProcessArrival.s
 	@echo ... Queue.obj
 	@echo ... Queue.i
 	@echo ... Queue.s

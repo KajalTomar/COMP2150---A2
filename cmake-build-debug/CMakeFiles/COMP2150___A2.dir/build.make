@@ -216,6 +216,34 @@ CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\PriorityQueue.cpp" -o CMakeFiles\COMP2150___A2.dir\PriorityQueue.cpp.s
 
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: CMakeFiles/COMP2150___A2.dir/flags.make
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: CMakeFiles/COMP2150___A2.dir/includes_CXX.rsp
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP2150___A2.dir\ProcessArrival.cpp.obj -c "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\ProcessArrival.cpp"
+
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\ProcessArrival.cpp" > CMakeFiles\COMP2150___A2.dir\ProcessArrival.cpp.i
+
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\ProcessArrival.cpp" -o CMakeFiles\COMP2150___A2.dir\ProcessArrival.cpp.s
+
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: CMakeFiles/COMP2150___A2.dir/flags.make
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: CMakeFiles/COMP2150___A2.dir/includes_CXX.rsp
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../FileReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP2150___A2.dir\FileReader.cpp.obj -c "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\FileReader.cpp"
+
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP2150___A2.dir/FileReader.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\FileReader.cpp" > CMakeFiles\COMP2150___A2.dir\FileReader.cpp.i
+
+CMakeFiles/COMP2150___A2.dir/FileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/FileReader.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\FileReader.cpp" -o CMakeFiles\COMP2150___A2.dir\FileReader.cpp.s
+
 # Object files for target COMP2150___A2
 COMP2150___A2_OBJECTS = \
 "CMakeFiles/COMP2150___A2.dir/A2main.cpp.obj" \
@@ -227,7 +255,9 @@ COMP2150___A2_OBJECTS = \
 "CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj" \
 "CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj" \
 "CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj" \
-"CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj"
+"CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj" \
+"CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj" \
+"CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj"
 
 # External object files for target COMP2150___A2
 COMP2150___A2_EXTERNAL_OBJECTS =
@@ -242,11 +272,13 @@ COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj
+COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj
+COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/build.make
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/linklibs.rsp
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/objects1.rsp
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable COMP2150___A2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable COMP2150___A2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP2150___A2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

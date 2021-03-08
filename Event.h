@@ -1,6 +1,4 @@
-#pragma once
-#include "ListItem.h"
-class Process;
+
 //--------------------------------------------
 // CLASS: Event.h
 //
@@ -10,12 +8,15 @@ class Process;
 // class.
 //
 //--------------------------------------------
+#pragma once
+#include "ListItem.h"
+class Process;
 class Simulation;
 
 class Event: public ListItem {
 private:
 	int eventTime;
-	Process *process;
+	Process * process;
 protected:
 	Simulation *sim;
 public:
@@ -23,15 +24,14 @@ public:
 	Event(int theTime, Process *theProcess, Simulation* sim); 
 
 	// pure virtual method - to handle the current event when it is removed from the queue.
-	// virtual void handleEvent() = 0;
-	void handleEvent();
+	virtual void handleEvent() = 0;
+	//void handleEvent();
 
 	// DELETE ME (I THINK)
 	void print();
 
 	// I made this for compareTo
 	int getEventTime();
-
 
 	// compareTo - used to order Events. 
 	int compareTo(ListItem *other);
