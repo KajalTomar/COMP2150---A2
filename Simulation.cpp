@@ -17,6 +17,7 @@
 
 #include <iostream>
 using namespace std;
+
 Simulation::Simulation(){
     CPUprocesses = new Queue;
     IOprocesses = new Queue;
