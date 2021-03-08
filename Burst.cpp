@@ -21,28 +21,16 @@ int Burst::compareTo(ListItem *other){
     int result = -2;
     Burst * comparingTo = dynamic_cast<Burst *>(other);
 
-    if(comparingTo != nullptr){
-        if(burstTime == comparingTo->getBurst()){
+    if(comparingTo != nullptr) {
+        if (burstTime == comparingTo->getBurst()) {
             result = 0; // same bursts
-        }
-        else if (burstTime < comparingTo->getBurst()){
+        } else if (burstTime < comparingTo->getBurst()) {
             result = -1; // this burst requires less time
         } else {
             result = 1; // this burst requires more time
         }
     }
-<<<<<<< HEAD
     return result;
 }
 
-//void Burst::print(){
-//    cout << "Burst Time: " << burstTime;
-//}
-=======
-	return result;
-}
 
-void Burst::print(){
-    cout << "Burst Time: " << burstTime;
-}
->>>>>>> 8691767b330811664d4274b78cb162ab8f7521c1
