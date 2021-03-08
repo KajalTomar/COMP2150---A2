@@ -48,6 +48,8 @@ CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ParentQueue.h
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.cpp
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.h
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Queue.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../StartCPU.h
 
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Node.h
@@ -65,4 +67,13 @@ CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../ProcessArrival.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Queue.h
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Simulation.cpp
 CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj: ../Simulation.h
+
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../FileReader.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../ParentQueue.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../Queue.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../StartCPU.cpp
+CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../StartCPU.h
 

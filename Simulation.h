@@ -24,7 +24,7 @@ private:
     PriorityQueue * eventList;
     Event * currentEvent;
     int QUANTUM_TIME;
-    int totalProcess = 0;
+    int nextProcessID;
     // you will need to add fields
 	// including: Queues for CPU and IO, and priority queues for Events
 public:
@@ -32,8 +32,14 @@ public:
 
 	// runSimulation -- start the simulation with the given filename.
 	// Called by main.
-	void runSimulation(char *fileName); 
+	void runSimulation(char *fileName);
+    void addEvent(Event * toAdd);
+    void addToCPULine(Process * toAdd);
+    void addToIOLine(Process * toAdd);
 
+    bool eventListEmpty();
+    int getNextIdNumber();
+    int getQUANTUM_TIME();
 	// summary -- print a summary of all the processes, as shown in the
 	// assignment.  Called by main.
 	void summary();

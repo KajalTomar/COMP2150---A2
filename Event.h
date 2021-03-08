@@ -14,11 +14,10 @@ class Process;
 class Simulation;
 
 class Event: public ListItem {
-private:
-	int eventTime;
-	Process * process;
 protected:
-	Simulation *sim;
+    int eventTime;
+    Process * process;
+	Simulation * sim;
 public:
 	// constructor, with pointer to the process that is being handled, and the simulation.
 	Event(int theTime, Process *theProcess, Simulation* sim); 
@@ -27,7 +26,6 @@ public:
 	virtual void handleEvent() = 0;
 	//void handleEvent();
 
-	// DELETE ME (I THINK)
 	void print();
 
 	// I made this for compareTo
@@ -35,4 +33,5 @@ public:
 
 	// compareTo - used to order Events. 
 	int compareTo(ListItem *other);
+
 };// class Event

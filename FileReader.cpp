@@ -37,7 +37,6 @@ string FileReader::getLine(){
     return line;
 }
 
-
 void FileReader::closeFile() {
     inFile.close();
     assert(!inFile.is_open());

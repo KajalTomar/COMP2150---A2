@@ -466,6 +466,33 @@ Simulation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Simulation.cpp.s
 .PHONY : Simulation.cpp.s
 
+StartCPU.obj: StartCPU.cpp.obj
+
+.PHONY : StartCPU.obj
+
+# target to build an object file
+StartCPU.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj
+.PHONY : StartCPU.cpp.obj
+
+StartCPU.i: StartCPU.cpp.i
+
+.PHONY : StartCPU.i
+
+# target to preprocess a source file
+StartCPU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.i
+.PHONY : StartCPU.cpp.i
+
+StartCPU.s: StartCPU.cpp.s
+
+.PHONY : StartCPU.s
+
+# target to generate assembly for a file
+StartCPU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.s
+.PHONY : StartCPU.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -511,6 +538,9 @@ help:
 	@echo ... Simulation.obj
 	@echo ... Simulation.i
 	@echo ... Simulation.s
+	@echo ... StartCPU.obj
+	@echo ... StartCPU.i
+	@echo ... StartCPU.s
 .PHONY : help
 
 

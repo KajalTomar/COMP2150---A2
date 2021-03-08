@@ -21,4 +21,5 @@ public:
 	void enqueue(ListItem *item);
 	ListItem *getFront();
 	ListItem *dequeue();
+	void printList();
 }; // class Queue

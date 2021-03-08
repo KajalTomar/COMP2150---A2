@@ -20,4 +20,5 @@ public:
     Burst(int burstTime);
     int getBurst();
     int compareTo(ListItem *other);
+    void print();
 };

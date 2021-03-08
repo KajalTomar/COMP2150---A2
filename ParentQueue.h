@@ -24,5 +24,5 @@ public:
     virtual void enqueue(ListItem *item) =0;
     virtual ListItem *getFront();
     virtual ListItem *dequeue();
-
+    virtual void printList();
 }; // class Queue

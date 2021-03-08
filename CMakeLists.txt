@@ -26,4 +26,4 @@ add_executable(COMP2150___A2
         ParentQueue.h
         PriorityQueue.cpp
         ParentQueue.h
-        ProcessArrival.cpp ProcessArrival.h FileReader.cpp FileReader.h)
+        ProcessArrival.cpp ProcessArrival.h FileReader.cpp FileReader.h StartCPU.cpp StartCPU.h)

@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj"
   "CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj"
+  "CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj"
   "COMP2150___A2.exe"
   "COMP2150___A2.exe.manifest"
   "COMP2150___A2.pdb"

@@ -151,6 +151,12 @@
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.h">
 			<Option target="COMP2150___A2"/>
 		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.cpp">
+			<Option target="COMP2150___A2"/>
+		</Unit>
+		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.h">
+			<Option target="COMP2150___A2"/>
+		</Unit>
 		<Unit filename="C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

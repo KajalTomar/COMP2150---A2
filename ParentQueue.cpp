@@ -12,6 +12,8 @@
 #include "ParentQueue.h"
 #include "ListItem.h"
 #include "Node.h"
+#include <iostream>
+using namespace std;
 
 ParentQueue::ParentQueue() : front(nullptr), back(nullptr), size(0) {}
 
@@ -47,3 +49,12 @@ ListItem *ParentQueue::getFront(){
     }
     return theItem;
 }// getFront
+
+void ParentQueue::printList(){
+    Node * curr = front;
+
+    while(curr){
+        curr->getItem()->print();
+        curr = curr->getNext();
+    }
+}

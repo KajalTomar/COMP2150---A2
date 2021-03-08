@@ -41,3 +41,7 @@ ListItem *Queue::getFront(){
     return ParentQueue::getFront();
 }// getFront
 
+void Queue::printList(){
+    ParentQueue::printList();
+}
+

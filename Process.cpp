@@ -38,9 +38,36 @@ Process::Process(string entireProcess, int makeThisTheID) {
     if (tempBurst != nullptr){
         currentBurst = tempBurst->getBurst();
     }
+
+    waitingTime = 0;
+
 }
 
-int Process::getTime(){ return arrivalTime; }
+int Process::getArrivalTime(){ return arrivalTime; }
+
+void Process::updateWaitTime(int time){ waitingTime+= time; }
+
+void Process::updateCurrentBurst(int time) {
+
+       // for CPU bursts
+       currentBurst-=time;
+       if(currentBurst < 0){
+           currentBurst = 0;
+       }
+
+}
+
+void Process::nextBurst() {
+    Burst *nextBurst = dynamic_cast<Burst *>(burstRequests->dequeue());
+
+    if(nextBurst != nullptr){
+        currentBurst = nextBurst->getBurst();
+    }
+}
+
+int Process::getCurrentBurst() { return currentBurst;}
+
+bool Process::noMoreBursts() { return (burstRequests->isEmpty());}
 
 void Process::print(){
     cout << "ID: " << id << " / arrival time: " << arrivalTime << " / current burst: " << currentBurst << " / # of remaining bursts: " << burstRequests->getSize() << endl;

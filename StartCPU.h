@@ -1,22 +1,21 @@
 //--------------------------------------------
-// CLASS: ProcessArrival.h
+// CLASS: StartCPU.h
 //
 // Author: Kajal Tomar, 7793306
 //
 // REMARKS: class definitions for the
-// ProcessArrival.cpp class.
+// StartCPU.cpp class.
 //
 //--------------------------------------------
 #include "Event.h"
-class FileReader;
 class Simulation;
 
-class ProcessArrival: public Event {
+class StartCPU: public Event {
 private:
-    FileReader * dataReader;
+
 public:
     // constructor, with pointer to the process that is being handled, and the simulation.
-    ProcessArrival(Process * newProcess, Simulation * sim ,FileReader * fReader);
+    StartCPU(int time, Process * newProcess, Simulation * sim);
 
     // pure virtual method - to handle the current event when it is removed from the queue.
     void handleEvent();
@@ -25,5 +24,5 @@ public:
     int compareTo(ListItem *other);
 
     void print();
-};// class Event
 
+};// class Event

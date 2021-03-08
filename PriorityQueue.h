@@ -20,4 +20,5 @@ public:
     //void setBack(Node * newBack);
     ListItem *getFront();
     ListItem *dequeue();
+    void printList();
 }; // class PriorityQueue

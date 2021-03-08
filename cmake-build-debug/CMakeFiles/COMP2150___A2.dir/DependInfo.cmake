@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/ProcessArrival.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Queue.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj"
   "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/Simulation.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/Simulation.cpp.obj"
+  "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/StartCPU.cpp" "C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug/CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
