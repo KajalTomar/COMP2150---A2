@@ -85,7 +85,6 @@ void PriorityQueue::addInTheMiddle(ListItem *item) {
 }
 
 ListItem *PriorityQueue::dequeue(){
-    Event * item = dynamic_cast<Event *>(front->getItem());
     return ParentQueue::dequeue();
 }// dePriorityQueue
 
