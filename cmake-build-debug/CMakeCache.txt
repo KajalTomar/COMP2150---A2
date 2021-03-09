@@ -118,7 +118,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Project
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/COMP2150___A2
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/ld.exe
@@ -249,12 +249,6 @@ COMP2150___A2_BINARY_DIR:STATIC=C:/Users/Kajal/Documents/COMP2150 - Object Orien
 
 //Value Computed by CMake
 COMP2150___A2_SOURCE_DIR:STATIC=C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2
-
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2/cmake-build-debug
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=C:/Users/Kajal/Documents/COMP2150 - Object Orientation/COMP2150---A2
 
 
 ########################

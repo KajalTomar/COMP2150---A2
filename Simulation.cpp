@@ -44,6 +44,10 @@ void Simulation::runSimulation(char *file){
         }
 
     }
+
+    cout << "Event: " << eventList->getSize() << endl;
+    cout << "CPU queue: " << CPUprocesses->getSize() << endl;
+    cout << "IO queue: " << IOprocesses->getSize() << endl;
 }
 
 int  Simulation::getNextIdNumber(){
@@ -64,9 +68,39 @@ void Simulation::addToIOLine(Process *toAdd) {
 }
 
 Process * Simulation::dequeueCPULine(){
-    Process * toReturn = dynamic_cast<Process *>(CPUprocesses->dequeue());
+    Process * toReturn = nullptr;
+    if(!CPUprocesses->isEmpty()) {
+        toReturn =  dynamic_cast<Process *>(CPUprocesses->dequeue());
+    }
     return toReturn;
 }
+Process * Simulation::getFirstInCPULine(){
+    Process * toReturn = nullptr;
+    if(!CPUprocesses->isEmpty()) {
+        toReturn = dynamic_cast<Process *>(CPUprocesses->getFront());
+    }
+    return toReturn;
+}
+
+
+Process * Simulation::dequeueIOLine(){
+    Process * toReturn = nullptr;
+    if(!IOprocesses->isEmpty()) {
+        toReturn = dynamic_cast<Process *>(IOprocesses->dequeue());
+    }
+    return toReturn;
+}
+
+Process * Simulation::getFirstInIOLine(){
+    Process * toReturn = nullptr;
+    if(!IOprocesses->isEmpty()){
+        toReturn = dynamic_cast<Process *>(IOprocesses->getFront());
+    }
+    return toReturn;
+}
+
+
+
 
 int Simulation::getQUANTUM_TIME() {
     return QUANTUM_TIME;

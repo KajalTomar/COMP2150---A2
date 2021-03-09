@@ -286,6 +286,48 @@ CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\CompleteCPU.cpp" -o CMakeFiles\COMP2150___A2.dir\CompleteCPU.cpp.s
 
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: CMakeFiles/COMP2150___A2.dir/flags.make
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: CMakeFiles/COMP2150___A2.dir/includes_CXX.rsp
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../StartIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP2150___A2.dir\StartIO.cpp.obj -c "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\StartIO.cpp"
+
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP2150___A2.dir/StartIO.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\StartIO.cpp" > CMakeFiles\COMP2150___A2.dir\StartIO.cpp.i
+
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/StartIO.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\StartIO.cpp" -o CMakeFiles\COMP2150___A2.dir\StartIO.cpp.s
+
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: CMakeFiles/COMP2150___A2.dir/flags.make
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: CMakeFiles/COMP2150___A2.dir/includes_CXX.rsp
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../CompleteIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP2150___A2.dir\CompleteIO.cpp.obj -c "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\CompleteIO.cpp"
+
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\CompleteIO.cpp" > CMakeFiles\COMP2150___A2.dir\CompleteIO.cpp.i
+
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\CompleteIO.cpp" -o CMakeFiles\COMP2150___A2.dir\CompleteIO.cpp.s
+
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: CMakeFiles/COMP2150___A2.dir/flags.make
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: CMakeFiles/COMP2150___A2.dir/includes_CXX.rsp
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Exit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP2150___A2.dir\Exit.cpp.obj -c "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\Exit.cpp"
+
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP2150___A2.dir/Exit.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\Exit.cpp" > CMakeFiles\COMP2150___A2.dir\Exit.cpp.i
+
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP2150___A2.dir/Exit.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\Exit.cpp" -o CMakeFiles\COMP2150___A2.dir\Exit.cpp.s
+
 # Object files for target COMP2150___A2
 COMP2150___A2_OBJECTS = \
 "CMakeFiles/COMP2150___A2.dir/A2main.cpp.obj" \
@@ -302,7 +344,10 @@ COMP2150___A2_OBJECTS = \
 "CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj" \
 "CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj" \
 "CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj" \
-"CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj"
+"CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj" \
+"CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj" \
+"CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj" \
+"CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj"
 
 # External object files for target COMP2150___A2
 COMP2150___A2_EXTERNAL_OBJECTS =
@@ -322,11 +367,14 @@ COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj
+COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj
+COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj
+COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/build.make
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/linklibs.rsp
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/objects1.rsp
 COMP2150___A2.exe: CMakeFiles/COMP2150___A2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable COMP2150___A2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kajal\Documents\COMP2150 - Object Orientation\COMP2150---A2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable COMP2150___A2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP2150___A2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

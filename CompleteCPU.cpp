@@ -10,13 +10,39 @@
 #include "CompleteCPU.h"
 #include "Simulation.h"
 #include "Process.h"
+#include "StartIO.h"
+#include "Exit.h"
+#include "StartCPU.h"
 #include <iostream>
 using namespace std;
 
 CompleteCPU::CompleteCPU(int time,Process * theProcess, Simulation * sim): Event(time,theProcess,sim){}
 
 void CompleteCPU::handleEvent() {
+    Process * firstInLine = sim->dequeueCPULine(); // dequeue
     cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " completes CPU burst." << endl;
+
+    if(process->compareTo(firstInLine)==0){
+        if(!process->noMoreBursts()){
+            if(!sim->IOInUse()){
+                sim->addEvent(new StartIO(eventTime,process,sim));
+            }
+
+            sim->addToIOLine(process);
+        } else {
+            sim->addEvent(new Exit(eventTime,process,sim));
+        }
+    }
+
+    firstInLine = nullptr;
+
+    if(sim->CPUInUse()){    // not empty
+        firstInLine = sim->getFirstInCPULine();
+        if(firstInLine!= nullptr){
+            sim->addEvent(new StartCPU(eventTime,firstInLine,sim));
+        }
+    }
+
 }
 
 int CompleteCPU::compareTo(ListItem *other) {

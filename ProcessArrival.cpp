@@ -13,6 +13,7 @@
 #include "Simulation.h"
 #include "StartCPU.h"
 #include "Process.h"
+#include "Timeout.h"
 #include <iostream>
 using namespace std;
 
@@ -44,6 +45,15 @@ void ProcessArrival::handleEvent() {
 }
 
 int ProcessArrival::compareTo(ListItem *other) {
-    return Event::compareTo(other);
+    int result = 0;
+    Timeout * checkIfTimeout = dynamic_cast<Timeout *>(other);
+
+    if((checkIfTimeout != nullptr) && (eventTime == checkIfTimeout->getEventTime())){ //  it's a timeOut event
+        result = -1; // this is higher
+    } else {
+        result = Event::compareTo(other);
+    }
+
+    return result;
 }
 

@@ -31,7 +31,11 @@ public:
 	// I made this for compareTo
 	int getEventTime();
 
+// I made this for compareTo
+    int getProcessID();
+
 	// compareTo - used to order Events. 
 	int compareTo(ListItem *other);
+
 
 };// class Event

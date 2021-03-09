@@ -11,14 +11,38 @@ CMakeFiles/COMP2150___A2.dir/Burst.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../CompleteCPU.cpp
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../CompleteCPU.h
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../Exit.h
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../Process.h
 CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../StartCPU.h
+CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.obj: ../StartIO.h
+
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../CompleteIO.cpp
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../CompleteIO.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../Exit.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../StartCPU.h
+CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj: ../StartIO.h
 
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Event.cpp
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Event.h
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../ProcessArrival.h
+CMakeFiles/COMP2150___A2.dir/Event.cpp.obj: ../Timeout.h
+
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Exit.cpp
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Exit.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../StartCPU.h
+CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj: ../StartIO.h
 
 CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../FileReader.cpp
 CMakeFiles/COMP2150___A2.dir/FileReader.cpp.obj: ../FileReader.h
@@ -36,6 +60,7 @@ CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../Node.h
 CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.cpp
 CMakeFiles/COMP2150___A2.dir/ParentQueue.cpp.obj: ../ParentQueue.h
 
+CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../Event.h
 CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../Node.h
 CMakeFiles/COMP2150___A2.dir/PriorityQueue.cpp.obj: ../ParentQueue.h
@@ -59,6 +84,7 @@ CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../ProcessArrival.h
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Queue.h
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Simulation.h
 CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../StartCPU.h
+CMakeFiles/COMP2150___A2.dir/ProcessArrival.cpp.obj: ../Timeout.h
 
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Queue.cpp.obj: ../Node.h
@@ -86,10 +112,20 @@ CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../StartCPU.cpp
 CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../StartCPU.h
 CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.obj: ../Timeout.h
 
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../CompleteIO.h
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../Event.h
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../ListItem.h
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../StartIO.cpp
+CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj: ../StartIO.h
+
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../Event.h
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../ListItem.h
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../Process.h
+CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../ProcessArrival.h
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../Simulation.h
+CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../StartCPU.h
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../Timeout.cpp
 CMakeFiles/COMP2150___A2.dir/Timeout.cpp.obj: ../Timeout.h
 

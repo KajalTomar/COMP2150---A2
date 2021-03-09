@@ -12,6 +12,8 @@
 //--------------------------------------------
 #include "Event.h"
 #include "Process.h"
+#include "ProcessArrival.h"
+#include "Timeout.h"
 #include <iostream>
 using namespace std;
 
@@ -24,12 +26,17 @@ int Event::getEventTime() {
 	return eventTime;
 }
 
+int Event::getProcessID() {
+    return process->getID();
+}
+
 void Event::print(){
     cout << "Time: \t" << eventTime << ": Process " << process->getID();
 }
 
 // just for testing pQueue delete after bc Event is an abstract class
 void handleEvent(){}
+
 int Event::compareTo(ListItem *other){
     int result = -2; // -1 means we are higher priority (smaller, earlier in time), 1 means we are lower priority (bigger, later in time), 0 means the same priority
     Event * comparingTo = dynamic_cast<Event *>(other); // take out the first burst. This will be the current burst
@@ -37,7 +44,17 @@ int Event::compareTo(ListItem *other){
     // safe down casting
     if (comparingTo != nullptr){
 		if(eventTime == comparingTo->getEventTime()){
-			result = 0;
+		    // tie breaker
+            if(process->getID() == comparingTo->getProcessID()){
+                result = 0; // not possible
+            }
+            else if(process->getID() < comparingTo->getProcessID()){
+                result = -1;
+            }
+            else {
+                result = 1;
+            }
+
 		}
 		else if (eventTime < comparingTo->getEventTime()){
             result = -1;
@@ -48,4 +65,6 @@ int Event::compareTo(ListItem *other){
 
     return  result;
 }
+
+
 

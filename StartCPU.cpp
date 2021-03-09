@@ -30,6 +30,7 @@ void StartCPU::handleEvent() {
         sim->addEvent(new Timeout((eventTime+QUANTUM_TIME),process,sim));
     } else {
         cout << " (will complete all "<<requestedBurst<<" remaining units)." << endl;
+        process->updateCurrentBurst(QUANTUM_TIME);
         process->nextBurst(); // make current burst = next burst
         sim->addEvent(new CompleteCPU((eventTime+requestedBurst), process, sim));
     }

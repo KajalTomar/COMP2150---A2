@@ -67,7 +67,15 @@ void Process::nextBurst() {
 
 int Process::getCurrentBurst() { return currentBurst;}
 
-bool Process::noMoreBursts() { return (burstRequests->isEmpty());}
+bool Process::noMoreBursts() {
+        bool empty = false;
+
+        if(currentBurst==0 && burstRequests->isEmpty()){
+            empty = true;
+        }
+
+        return empty;
+}
 
 //void Process::print(){
 //    cout << "Process\t" << id << " / arrival time: " << arrivalTime << " / current burst: " << currentBurst << " / # of remaining bursts: " << burstRequests->getSize() << endl;
@@ -80,7 +88,10 @@ int Process::compareTo(ListItem *other){
 
     // safe down casting
     if (comparingTo != nullptr){
-        if (id < comparingTo->getID()){
+        if(id == comparingTo->getID()){
+            result = 0; // this is higher priority
+        }
+        else if (id < comparingTo->getID()){
             result = -1; // this is higher priority
         } else {
             result = 1; // lthis is lower priority

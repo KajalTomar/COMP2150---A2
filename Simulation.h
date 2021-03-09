@@ -37,6 +37,9 @@ public:
     void addToCPULine(Process * toAdd);
     void addToIOLine(Process * toAdd);
     Process * dequeueCPULine();
+    Process * getFirstInCPULine();
+    Process * dequeueIOLine();
+    Process * getFirstInIOLine();
   //  bool eventListEmpty();
     bool CPUInUse();
     bool IOInUse();

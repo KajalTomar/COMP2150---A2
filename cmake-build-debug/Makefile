@@ -223,6 +223,33 @@ CompleteCPU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteCPU.cpp.s
 .PHONY : CompleteCPU.cpp.s
 
+CompleteIO.obj: CompleteIO.cpp.obj
+
+.PHONY : CompleteIO.obj
+
+# target to build an object file
+CompleteIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.obj
+.PHONY : CompleteIO.cpp.obj
+
+CompleteIO.i: CompleteIO.cpp.i
+
+.PHONY : CompleteIO.i
+
+# target to preprocess a source file
+CompleteIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.i
+.PHONY : CompleteIO.cpp.i
+
+CompleteIO.s: CompleteIO.cpp.s
+
+.PHONY : CompleteIO.s
+
+# target to generate assembly for a file
+CompleteIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/CompleteIO.cpp.s
+.PHONY : CompleteIO.cpp.s
+
 Event.obj: Event.cpp.obj
 
 .PHONY : Event.obj
@@ -249,6 +276,33 @@ Event.s: Event.cpp.s
 Event.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Event.cpp.s
 .PHONY : Event.cpp.s
+
+Exit.obj: Exit.cpp.obj
+
+.PHONY : Exit.obj
+
+# target to build an object file
+Exit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Exit.cpp.obj
+.PHONY : Exit.cpp.obj
+
+Exit.i: Exit.cpp.i
+
+.PHONY : Exit.i
+
+# target to preprocess a source file
+Exit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Exit.cpp.i
+.PHONY : Exit.cpp.i
+
+Exit.s: Exit.cpp.s
+
+.PHONY : Exit.s
+
+# target to generate assembly for a file
+Exit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/Exit.cpp.s
+.PHONY : Exit.cpp.s
 
 FileReader.obj: FileReader.cpp.obj
 
@@ -520,6 +574,33 @@ StartCPU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartCPU.cpp.s
 .PHONY : StartCPU.cpp.s
 
+StartIO.obj: StartIO.cpp.obj
+
+.PHONY : StartIO.obj
+
+# target to build an object file
+StartIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartIO.cpp.obj
+.PHONY : StartIO.cpp.obj
+
+StartIO.i: StartIO.cpp.i
+
+.PHONY : StartIO.i
+
+# target to preprocess a source file
+StartIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartIO.cpp.i
+.PHONY : StartIO.cpp.i
+
+StartIO.s: StartIO.cpp.s
+
+.PHONY : StartIO.s
+
+# target to generate assembly for a file
+StartIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\COMP2150___A2.dir\build.make CMakeFiles/COMP2150___A2.dir/StartIO.cpp.s
+.PHONY : StartIO.cpp.s
+
 Timeout.obj: Timeout.cpp.obj
 
 .PHONY : Timeout.obj
@@ -565,9 +646,15 @@ help:
 	@echo ... CompleteCPU.obj
 	@echo ... CompleteCPU.i
 	@echo ... CompleteCPU.s
+	@echo ... CompleteIO.obj
+	@echo ... CompleteIO.i
+	@echo ... CompleteIO.s
 	@echo ... Event.obj
 	@echo ... Event.i
 	@echo ... Event.s
+	@echo ... Exit.obj
+	@echo ... Exit.i
+	@echo ... Exit.s
 	@echo ... FileReader.obj
 	@echo ... FileReader.i
 	@echo ... FileReader.s
@@ -598,6 +685,9 @@ help:
 	@echo ... StartCPU.obj
 	@echo ... StartCPU.i
 	@echo ... StartCPU.s
+	@echo ... StartIO.obj
+	@echo ... StartIO.i
+	@echo ... StartIO.s
 	@echo ... Timeout.obj
 	@echo ... Timeout.i
 	@echo ... Timeout.s
