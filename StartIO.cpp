@@ -31,6 +31,6 @@ void StartIO::handleEvent() {
 
 }
 
-int StartIO::compareTo(ListItem *other) {
-    return Event::compareTo(other);
-}
+//int StartIO::compareTo(ListItem *other) {
+//    return Event::compareTo(other);
+//}

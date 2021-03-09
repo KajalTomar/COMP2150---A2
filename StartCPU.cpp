@@ -37,9 +37,9 @@ void StartCPU::handleEvent() {
 
 }
 
-int StartCPU::compareTo(ListItem *other) {
-    return Event::compareTo(other);
-}
+//int StartCPU::compareTo(ListItem *other) {
+//    return Event::compareTo(other);
+//}
 
 
 

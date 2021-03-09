@@ -43,10 +43,10 @@ void CompleteCPU::handleEvent() {
     }
 
 }
-
-int CompleteCPU::compareTo(ListItem *other) {
-    return Event::compareTo(other);
-}
+//
+//int CompleteCPU::compareTo(ListItem *other) {
+//    return Event::compareTo(other);
+//}
 
 //void CompleteCPU::print() {
 //    cout << "CompleteCPU event ";

@@ -45,6 +45,6 @@ void CompleteIO::handleEvent() {
     }
 }
 
-int CompleteIO::compareTo(ListItem *other) {
-    return Event::compareTo(other);
-}
+//int CompleteIO::compareTo(ListItem *other) {
+//    return Event::compareTo(other);
+//}

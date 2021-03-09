@@ -26,16 +26,10 @@ public:
 	virtual void handleEvent() = 0;
 	//void handleEvent();
 
-	void print();
-
-	// I made this for compareTo
 	int getEventTime();
-
-// I made this for compareTo
     int getProcessID();
 
-	// compareTo - used to order Events. 
-	int compareTo(ListItem *other);
+	virtual int compareTo(ListItem *other);
 
 
 };// class Event

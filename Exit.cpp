@@ -23,6 +23,6 @@ void Exit::handleEvent() {
     sim->addToSummary(process);
 }
 
-int Exit::compareTo(ListItem *other) {
-    return Event::compareTo(other);
-}
+//int Exit::compareTo(ListItem *other) {
+//    return Event::compareTo(other);
+//}

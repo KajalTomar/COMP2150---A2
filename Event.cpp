@@ -30,10 +30,6 @@ int Event::getProcessID() {
     return process->getID();
 }
 
-void Event::print(){
-    cout << "Time: \t" << eventTime << ": Process " << process->getID();
-}
-
 // just for testing pQueue delete after bc Event is an abstract class
 void handleEvent(){}
 

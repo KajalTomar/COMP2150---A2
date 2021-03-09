@@ -12,7 +12,7 @@ public:
     void handleEvent();
 
     // compareTo - used to order Events.
-    int compareTo(ListItem *other);
+  //  int compareTo(ListItem *other);
 
 //    void print();
 
