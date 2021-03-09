@@ -15,12 +15,12 @@
 #include <iostream>
 using namespace std;
 
-Exit::Exit(int time,Process * theProcess, Simulation * sim): Event(time,theProcess,sim){
-    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " exits the system." << endl;
-}
+Exit::Exit(int time,Process * theProcess, Simulation * sim): Event(time,theProcess,sim){}
 
 void Exit::handleEvent() {
-
+    cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " exits the system." << endl;
+    process->setExitTime(eventTime);
+    sim->addToSummary(process);
 }
 
 int Exit::compareTo(ListItem *other) {

@@ -23,14 +23,13 @@ void CompleteCPU::handleEvent() {
     cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " completes CPU burst." << endl;
 
     if(process->compareTo(firstInLine)==0){
-        if(!process->noMoreBursts()){
+        if(process->noMoreBursts()){
+            sim->addEvent(new Exit(eventTime,process,sim));
+        } else {
             if(!sim->IOInUse()){
                 sim->addEvent(new StartIO(eventTime,process,sim));
             }
-
             sim->addToIOLine(process);
-        } else {
-            sim->addEvent(new Exit(eventTime,process,sim));
         }
     }
 

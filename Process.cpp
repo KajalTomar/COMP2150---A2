@@ -12,6 +12,7 @@
 #include "Burst.h"
 #include "Queue.h"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 Process::Process() {} // what should I initialize the values with here?
@@ -19,6 +20,7 @@ Process::Process() {} // what should I initialize the values with here?
 Process::Process(string entireProcess, int makeThisTheID) {
     burstRequests = new Queue; // make a queue of bursts for this process
     int tempBurstAmount; // will hold the burstAmount tokens one by one
+    totalBurstTime = 0;
     Burst * tempBurst;
 
     id = makeThisTheID; // set the id
@@ -28,6 +30,8 @@ Process::Process(string entireProcess, int makeThisTheID) {
 
     // go through each token in the string
     while(iss >> tempBurstAmount){
+        totalBurstTime+=abs(tempBurstAmount);
+
         tempBurst = new Burst(tempBurstAmount); // create a new burst item for each token
         burstRequests->enqueue(tempBurst); // add it to this process's list of requested bursts
     }
@@ -39,13 +43,16 @@ Process::Process(string entireProcess, int makeThisTheID) {
         currentBurst = tempBurst->getBurst();
     }
 
-    waitingTime = 0;
 
 }
 
 int Process::getArrivalTime(){ return arrivalTime; }
 
-void Process::updateWaitTime(int time){ waitingTime+= time; }
+int Process::getExitTime(){ return exitTime; }
+
+int Process::getWaitTime(){ return ((exitTime-arrivalTime)-totalBurstTime); }
+
+void Process::setExitTime(int time){ exitTime = time; }
 
 void Process::updateCurrentBurst(int time) {
 

@@ -45,10 +45,7 @@ int Event::compareTo(ListItem *other){
     if (comparingTo != nullptr){
 		if(eventTime == comparingTo->getEventTime()){
 		    // tie breaker
-            if(process->getID() == comparingTo->getProcessID()){
-                result = 0; // not possible
-            }
-            else if(process->getID() < comparingTo->getProcessID()){
+           if(process->getID() <= comparingTo->getProcessID()){
                 result = -1;
             }
             else {

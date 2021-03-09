@@ -22,12 +22,12 @@ Simulation::Simulation(){
     CPUprocesses = new Queue;
     IOprocesses = new Queue;
     eventList = new PriorityQueue;
+    summary = new PriorityQueue;
     nextProcessID = 1;
 }
 
 void Simulation::runSimulation(char *file){
     dataReader = new FileReader(file);  // create the file reader
-    nextProcessID = 1;
     QUANTUM_TIME = dataReader->getQuantumNumber(); // set the quantum time
 
     Process * firstProcess = new Process((dataReader->getLine()),nextProcessID);
@@ -45,9 +45,7 @@ void Simulation::runSimulation(char *file){
 
     }
 
-    cout << "Event: " << eventList->getSize() << endl;
-    cout << "CPU queue: " << CPUprocesses->getSize() << endl;
-    cout << "IO queue: " << IOprocesses->getSize() << endl;
+
 }
 
 int  Simulation::getNextIdNumber(){
@@ -57,6 +55,10 @@ int  Simulation::getNextIdNumber(){
 
 void Simulation::addEvent(Event *toAdd) {
     eventList->enqueue(toAdd);
+}
+
+void Simulation::addToSummary(Process *toAdd) {
+    summary->enqueue(toAdd);
 }
 
 void Simulation::addToCPULine(Process *toAdd) {
@@ -116,6 +118,17 @@ bool Simulation::IOInUse(){return !IOprocesses->isEmpty(); }
 //}
 
 void Simulation::summarize(){
+    Process * temp;
+    cout << "Process #\tArrival Time\tExit Time\tWait Time"<<endl;
+    cout << "------------------------------------------------------------------"<<endl;
+    while(!summary->isEmpty()){
+        temp = dynamic_cast<Process * >(summary->dequeue());
+        if(temp!= nullptr){
+            cout << temp->getID() << "\t\t" << temp->getArrivalTime() << "\t\t" << temp->getExitTime() << "\t\t"<<temp->getWaitTime()<< endl;
+        }
+        temp = nullptr;
+    }
 
+   // cout <<  "Time\t"<< eventTime <<": Process\t" << process->getID() << " completes IO burst." << endl;
 }
 

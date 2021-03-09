@@ -28,7 +28,7 @@ int main(int argc, char *argv[]){
 		Simulation* sim = new Simulation();
 		sim->runSimulation(argv[1]);
 		cout << "\n...All Processes complete.  Final Summary:\n\n";
-
+        sim->summarize();
 		cout << "\nEnd of processing.\n";
 		return 0;
 	}

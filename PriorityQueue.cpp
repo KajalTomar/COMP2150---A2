@@ -10,6 +10,9 @@
 #include "ListItem.h"
 #include "Event.h"
 #include "Node.h"
+// take this everything after this comment  out
+#include <iostream>
+using namespace std;
 
 /**** PriorityQueue implementation */
 PriorityQueue::PriorityQueue() : ParentQueue() {}
@@ -26,12 +29,9 @@ bool PriorityQueue::isEmpty(){
 //    back = item;
 //}
 
-void PriorityQueue::enqueue(ListItem *itemToAdd){
+void PriorityQueue::enqueue(ListItem *item){
     Node * temp;
-    Event * item = dynamic_cast<Event *>(itemToAdd);
 
-    // so we can't accidently add a process to the event list
-    if(item!= nullptr) {
         // special case: adding to empty PriorityQueue
         if (front == nullptr) {
             front = new Node(item, nullptr);
@@ -39,9 +39,9 @@ void PriorityQueue::enqueue(ListItem *itemToAdd){
         } else if (item->compareTo(front->getItem()) == -1) {
             // item has a higher priority than the first item on the list
             // no need to look through the whole list, just add this item to the front
-
             temp = new Node(item, front);
             front = temp;
+            temp = nullptr;
         } else if (item->compareTo(back->getItem()) == 1) {
             // item has a lower priority than the last item on the list
             // no need to look through the whole list, just add this item to the back
@@ -50,13 +50,14 @@ void PriorityQueue::enqueue(ListItem *itemToAdd){
             back = back->getNext();
         }
         else {
+
             // there are more than one items in the priority queue
             // search for the right spot and add it there
 
             addInTheMiddle(item);
         }
         size++;
-    }
+
 }// enPriorityQueue
 
 void PriorityQueue::addInTheMiddle(ListItem *item) {
@@ -68,7 +69,7 @@ void PriorityQueue::addInTheMiddle(ListItem *item) {
             beforeCurrent = current;
             current = current->getNext();
 
-            if((current->getItem())->compareTo(item) >= 0){
+            if((current->getItem())->compareTo(item) == 1){
                 // current is of a lower priority or the same
                 // later if 1 then current is a lower priority
                 // 0 = same priority
@@ -84,6 +85,7 @@ void PriorityQueue::addInTheMiddle(ListItem *item) {
 }
 
 ListItem *PriorityQueue::dequeue(){
+    Event * item = dynamic_cast<Event *>(front->getItem());
     return ParentQueue::dequeue();
 }// dePriorityQueue
 

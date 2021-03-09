@@ -29,6 +29,7 @@ void CompleteIO::handleEvent() {
             }
             sim->addToCPULine(process);
         } else {
+
             sim->addEvent(new Exit(eventTime,process,sim));
         }
     }

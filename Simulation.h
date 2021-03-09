@@ -22,6 +22,7 @@ private:
     Queue * CPUprocesses;
     Queue * IOprocesses;
     PriorityQueue * eventList;
+    PriorityQueue * summary;
     Event * currentEvent;
     int QUANTUM_TIME;
     int nextProcessID;
@@ -34,6 +35,7 @@ public:
 	// Called by main.
 	void runSimulation(char *fileName);
     void addEvent(Event * toAdd);
+    void addToSummary(Process * toAdd);
     void addToCPULine(Process * toAdd);
     void addToIOLine(Process * toAdd);
     Process * dequeueCPULine();
