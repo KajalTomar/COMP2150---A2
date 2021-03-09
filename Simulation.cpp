@@ -31,8 +31,7 @@ void Simulation::runSimulation(char *file){
     QUANTUM_TIME = dataReader->getQuantumNumber(); // set the quantum time
 
     Process * firstProcess = new Process((dataReader->getLine()),nextProcessID);
-   // cout << "First Process: ";
-   // firstProcess->print();
+
 
     currentEvent = new ProcessArrival(firstProcess, this, dataReader);
     eventList->enqueue(currentEvent);

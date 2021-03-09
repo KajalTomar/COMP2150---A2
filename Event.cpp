@@ -30,9 +30,6 @@ int Event::getProcessID() {
     return process->getID();
 }
 
-// just for testing pQueue delete after bc Event is an abstract class
-void handleEvent(){}
-
 int Event::compareTo(ListItem *other){
     int result = -2; // -1 means we are higher priority (smaller, earlier in time), 1 means we are lower priority (bigger, later in time), 0 means the same priority
     Event * comparingTo = dynamic_cast<Event *>(other); // take out the first burst. This will be the current burst

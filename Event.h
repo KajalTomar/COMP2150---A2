@@ -24,12 +24,10 @@ public:
 
 	// pure virtual method - to handle the current event when it is removed from the queue.
 	virtual void handleEvent() = 0;
-	//void handleEvent();
 
 	int getEventTime();
     int getProcessID();
 
 	virtual int compareTo(ListItem *other);
-
 
 };// class Event
