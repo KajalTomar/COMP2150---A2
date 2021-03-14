@@ -17,38 +17,80 @@
 #include <iostream>
 using namespace std;
 
-/**** Event implementation */
+//------------------------------------------------------
+// Event
+//
+// PURPOSE: the constructor for an Event object.
+// PARAMETERS: time of event, a pointer the process,
+//  a pointer to the simulation.
+//------------------------------------------------------
 Event::Event(int theTime, Process *theProcess, Simulation *theSim) 
 	 :eventTime(theTime), process(theProcess), sim (theSim) {}
 
-	 // I made this for compareTo
+//------------------------------------------------------
+// getEventTime
+//
+// PURPOSE: returns the event's time
+// RETURNS: int (the time of the event)
+//------------------------------------------------------
 int Event::getEventTime() {
 	return eventTime;
 }
 
+//------------------------------------------------------
+// getProcessID
+//
+// PURPOSE: returns the process's ID
+// RETURNS: int (the process's ID)
+//------------------------------------------------------
 int Event::getProcessID() {
     return process->getID();
 }
 
+//------------------------------------------------------
+// compareTo
+//
+// PURPOSE: compares a given Event to itself based
+//      on event's time first and if that ties then the
+//      process ID.
+// PARAMETERS: List item to compare with.
+//  RETURNS: returns int
+//      -2 = default return
+//      -1 = this is higher priority, earlier in time or
+//           lower process id if the time is the same.
+//       1 = this has lower priority, later in time or
+//           higher process if if time is the same.
+//       0 = both events have the same time and process id
+//------------------------------------------------------
 int Event::compareTo(ListItem *other){
-    int result = -2; // -1 means we are higher priority (smaller, earlier in time), 1 means we are lower priority (bigger, later in time), 0 means the same priority
+    int result = -2;
     Event * comparingTo = dynamic_cast<Event *>(other); // take out the first burst. This will be the current burst
 
-    // safe down casting
+
     if (comparingTo != nullptr){
+        // safe down casting
+
 		if(eventTime == comparingTo->getEventTime()){
-		    // tie breaker
+		    // if the event time is the same
+
+		    // tie breaker, compare the process ID
            if(process->getID() <= comparingTo->getProcessID()){
+                // this process ID is lower
                 result = -1;
             }
             else {
+                // the comparing event's process ID is lower
                 result = 1;
             }
-
 		}
 		else if (eventTime < comparingTo->getEventTime()){
+		    // if the event time's are different
+
+            // this event took place earlier
             result = -1;
         } else {
+
+		    // the other event took place earlier
             result = 1;
         }
     }

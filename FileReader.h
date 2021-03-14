@@ -16,7 +16,6 @@ class FileReader {
 private:
     fstream inFile;
 public:
-    FileReader();
     FileReader(char * fileName);
 
     string getLine();

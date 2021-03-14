@@ -25,9 +25,7 @@ private:
     int exitTime;
 
 public:
-    Process();
     Process(string entireProcess, int id);
-    void print();
     int getArrivalTime();
     int getID();
     int getExitTime();

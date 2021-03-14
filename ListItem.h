@@ -13,5 +13,4 @@
 class ListItem {
 public:
 	virtual int compareTo(ListItem *other) = 0;
-//	virtual void print() = 0;
 }; // class ListItem

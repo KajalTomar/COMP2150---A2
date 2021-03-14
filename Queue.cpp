@@ -3,22 +3,17 @@
 //
 // Author: Kajal Tomar, 7793306
 //
-// REMARKS: implementation of a queue
+// REMARKS: implementation of a queue.
 //--------------------------------------------
 #include "Queue.h"
 #include "ListItem.h"
 #include "Node.h"
 
 /**** Queue implementation */
+/** The same as how it was given to use, just moved some methods to a parent class (also untouched)**/
+
+
 Queue::Queue() : ParentQueue() {}
-
-int Queue::getSize(){
-    return ParentQueue::getSize();
-}
-
-bool Queue::isEmpty(){
-    return ParentQueue::isEmpty();
-}
 
 void Queue::enqueue(ListItem *item){
 	// special case: adding to empty queue
@@ -32,14 +27,6 @@ void Queue::enqueue(ListItem *item){
 	size++;
 }// enqueue
 
-ListItem *Queue::dequeue(){
-	return ParentQueue::dequeue();
-}// dequeue
-
-
-ListItem *Queue::getFront(){
-    return ParentQueue::getFront();
-}// getFront
 
 
 

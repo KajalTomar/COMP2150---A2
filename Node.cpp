@@ -10,7 +10,8 @@
 #include "Node.h"
 #include "ListItem.h"
 
-/**** Node implementation */
+/**** I didn't make any changes to this. It's exactly how it was given to us*/
+
 Node::Node() : item(nullptr), next(nullptr)  {}
 
 Node::Node(ListItem *i, Node *n) : item(i), next(n) {}

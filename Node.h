@@ -9,6 +9,9 @@
 //--------------------------------------------
 class ListItem;
 
+
+/**** I didn't make any changes to this. It's exactly how it was given to us*/
+
 class Node {
 private:
 	ListItem *item;

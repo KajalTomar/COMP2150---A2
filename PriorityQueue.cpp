@@ -3,7 +3,7 @@
 //
 // Author: Kajal Tomar, 7793306
 //
-// REMARKS: implementation of a PriorityQueue
+// REMARKS: implementation of a PriorityQueue.
 //--------------------------------------------
 #include "PriorityQueue.h"
 #include "ParentQueue.h"
@@ -15,20 +15,20 @@
 using namespace std;
 
 /**** PriorityQueue implementation */
+
+//------------------------------------------------------
+// ParentQueue
+//
+// PURPOSE: calls the parent contructor
+//------------------------------------------------------
 PriorityQueue::PriorityQueue() : ParentQueue() {}
 
-int PriorityQueue::getSize(){
-    return ParentQueue::getSize();
-}
-
-bool PriorityQueue::isEmpty(){
-    return ParentQueue::isEmpty();
-}
-
-//void PriorityQueue::setBack(Node *newBack) {
-//    back = item;
-//}
-
+//------------------------------------------------------
+// enqueue
+//
+// PURPOSE: adds item to the queue based on priority
+// PARAMETERS: the list item to add
+//------------------------------------------------------
 void PriorityQueue::enqueue(ListItem *item){
     Node * temp;
 
@@ -36,13 +36,16 @@ void PriorityQueue::enqueue(ListItem *item){
         if (front == nullptr) {
             front = new Node(item, nullptr);
             back = front;
-        } else if (item->compareTo(front->getItem()) == -1) {
+        }
+        else if (item->compareTo(front->getItem()) == -1) {
             // item has a higher priority than the first item on the list
             // no need to look through the whole list, just add this item to the front
+
             temp = new Node(item, front);
             front = temp;
             temp = nullptr;
-        } else if (item->compareTo(back->getItem()) == 1) {
+        }
+        else if (item->compareTo(back->getItem()) == 1) {
             // item has a lower priority than the last item on the list
             // no need to look through the whole list, just add this item to the back
 
@@ -60,12 +63,19 @@ void PriorityQueue::enqueue(ListItem *item){
 
 }// enPriorityQueue
 
+//------------------------------------------------------
+// enqueue
+//
+// PURPOSE: adds item to the middle of the queue based on priority
+// PARAMETERS: the list item to add
+//------------------------------------------------------
 void PriorityQueue::addInTheMiddle(ListItem *item) {
     bool foundSpot = false;
     Node * current = front;
     Node * beforeCurrent = nullptr;
 
     while (current && !foundSpot) {
+        // cycle through the list until we get to the end of the list or find a spot
             beforeCurrent = current;
             current = current->getNext();
 
@@ -84,12 +94,4 @@ void PriorityQueue::addInTheMiddle(ListItem *item) {
 
 }
 
-ListItem *PriorityQueue::dequeue(){
-    return ParentQueue::dequeue();
-}// dePriorityQueue
-
-
-ListItem *PriorityQueue::getFront(){
-    return ParentQueue::getFront();
-}// getFront
 
